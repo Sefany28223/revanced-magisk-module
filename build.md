@@ -1,26 +1,41 @@
 CLI: revanced-cli-2.21.0-all.jar  
-Integrations: revanced-integrations-0.95.0.apk  
-Patches: revanced-patches-2.159.0.jar  
+Integrations: app-release-unsigned.apk  
+Patches: revanced-patches-2.159.1.jar  
 
-### [2.159.0](https://github.com/revanced/revanced-patches/compare/v2.158.0...v2.159.0) (2023-02-03)
-### Bug Fixes
-* **youtube/custom-branding:** correct scaling, margin and images ([#1580](https://github.com/revanced/revanced-patches/issues/1580)) ([491c413](https://github.com/revanced/revanced-patches/commit/491c4138f0185664a9c5d3db9ebdf026ff4594e8))
-### Features
-* `spoof-wifi-connection` patch ([#1527](https://github.com/revanced/revanced-patches/issues/1527)) ([adce206](https://github.com/revanced/revanced-patches/commit/adce206d66e1f7017328fe68a5818d424f70e588))
-* **music:** bump patches compatibility to v5.41.50 ([#1551](https://github.com/revanced/revanced-patches/issues/1551)) ([0b1024a](https://github.com/revanced/revanced-patches/commit/0b1024ab754a3e2ce798a54cccda6f41f97069a5))
-* **netguard:** `remove-broadcasts-restriction` patch ([#1581](https://github.com/revanced/revanced-patches/issues/1581)) ([73132e3](https://github.com/revanced/revanced-patches/commit/73132e37cf83f4c1f05cf6a184dfd8e454f7456e))
-* **spotify-lite:** enable on-demand patch ([9f0de4f](https://github.com/revanced/revanced-patches/commit/9f0de4f5678e9f57baaf6ec788821641d75defdc))
-* **youtube:** `hide-player-buttons` patch ([3469d37](https://github.com/revanced/revanced-patches/commit/3469d37bcedfd2dfbe46231b17cd098b591810c1))
+YouTube
+==
+- add `Enable save brightness` toggle (swipe gesture) https://github.com/inotia00/ReVanced_Extended/issues/207
+- add `hide-tooltip-content` patch https://github.com/inotia00/ReVanced_Extended/issues/201
+- add `hide-fullscreen-panels` patch https://github.com/inotia00/ReVanced_Extended/issues/147
+- remove `hide-fullscreen-buttoncontainer` patch (duplicated with `hide-fullscreen-panels` patch)
+- fix: `Hide info cards` setting also removes info cards in video description panels https://github.com/inotia00/ReVanced_Extended/issues/212
+- fix: `Hide shorts player subscriptions button` setting removes the subscribe button in channel info
+- refactor: `Disable pip mode in shorts player` (Experimental Flags) setting now works on Android 12+ devices
+- refactor: `always-autorepeat` patch
+- crowdin translation update
+`Arabic`, `Chinese Simplified`, `Chinese Traditional`, `French`, `Greek`, `Indonesian`, `Japanese`, `Korean`, `Russian`, `Spanish`, `Vietnamese`
 
+YouTube Music
+==
+- fix: `hide-get-premium` patch is broken in latest YT Music
+
+ETC
+==
+- add suport YouTube v18.04.41
+- refactor: word patch descriptions clearly
+- _clean install recommended_
+
+※ Compatible ReVanced Manager: v0.0.54
+※ If you want to contribute to the translation, refer below
+
+[Crowdin translation]
+- [european countries](https://crowdin.com/project/revancedextendedeu)
+- [other countries](https://crowdin.com/project/revancedextended)
   
 **App Versions:**  
-YouTube: 18.03.36  
-Music (arm64-v8a): 5.41.50  
-Music (arm-v7a): 5.41.50  
-Twitter: 9.69.1-release.0  
-Reddit: 2022.43.0  
-Twitch: 14.4.0  
-TikTok: 27.8.3  
+YouTube: 18.04.41  
+Music (arm-v7a): 5.42.50  
+Music (arm64-v8a): 5.42.50  
 
 Install [Vanced Microg](https://github.com/TeamVanced/VancedMicroG/releases) to be able to use non-root YouTube or Music  
 
